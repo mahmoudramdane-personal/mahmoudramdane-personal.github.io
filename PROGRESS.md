@@ -17,11 +17,15 @@
 
 ---
 
-## Phase 2: Content & Personalization 🔲
-*Status: Not started*
+## Phase 2: Content & Personalization 🏗️
+*Status: In Progress*
 
+- [x] Integrate Contentful CMS (`js/contentful.js`)
+- [x] Create content models (Site Settings, Projects, etc.) via CMA script
+- [x] Implement dynamic data loading in `main.js`
+- [x] Add rich text & YouTube embed support
+- [x] Add real profile photo support (custom field in Site Settings)
 - [ ] Replace filler name, title, tagline with real info
-- [ ] Add real profile photo (replace initials avatar)
 - [ ] Update pillar cards with actual specialties
 - [ ] Add real project descriptions and tags
 - [ ] Upload project screenshots/media

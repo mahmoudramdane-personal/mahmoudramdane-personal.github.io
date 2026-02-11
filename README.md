@@ -35,6 +35,11 @@ Built with **React 18**, **HTM**, and **vanilla CSS** — zero bundler, deployed
 | Templates | HTM (no JSX / no build step) |
 | Styling | Vanilla CSS with custom properties |
 | Modules | Native Import Maps |
+| UI | React 18 via ESM |
+| CMS | Contentful (Headless) |
+| Templates | HTM (no JSX / no build step) |
+| Styling | Vanilla CSS with custom properties |
+| Modules | Native Import Maps |
 | Hosting | GitHub Pages |
 
 **Zero bundler** — no Webpack, Vite, or build tools. Everything loads via `<script type="importmap">` and ESM `import` statements.
@@ -52,6 +57,19 @@ Built with **React 18**, **HTM**, and **vanilla CSS** — zero bundler, deployed
 │   └── animations.css  # Scroll reveals, keyframes
 ├── js/
 │   └── main.js         # React app (all components + data)
+├── UI_UX_GUIDE.md      # Design system documentation
+├── PROGRESS.md         # Development progress tracker
+└── README.md           # This file
+├── index.html          # Entry point + ESM import map
+├── css/
+│   ├── base.css        # Design tokens, reset, dark mode
+│   ├── layout.css      # Nav, hero, grid, footer
+│   ├── components.css  # Cards, buttons, modals, timeline
+│   └── animations.css  # Scroll reveals, keyframes
+├── js/
+│   ├── main.js         # React app (all components + data)
+│   └── contentful.js   # CMS client & rich text renderer
+├── scripts/            # Node.js scripts for CMS management
 ├── UI_UX_GUIDE.md      # Design system documentation
 ├── PROGRESS.md         # Development progress tracker
 └── README.md           # This file

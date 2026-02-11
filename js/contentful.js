@@ -100,7 +100,8 @@ export async function fetchEntries(contentType, options = {}) {
  * Fetch a single entry by content type (for singletons like Site Settings).
  */
 export async function fetchSingleEntry(contentType) {
-    const entries = await fetchEntries(contentType, { limit: '1' });
+    // Override default order (fields.order) with system timestamp to avoid errors on models without 'order' field
+    const entries = await fetchEntries(contentType, { limit: '1', order: '-sys.updatedAt' });
     return entries && entries.length > 0 ? entries[0] : null;
 }
 
