@@ -8,7 +8,8 @@ Built with **React 18**, **HTM**, and **vanilla CSS** — zero bundler, deployed
 
 ## 🚀 Live Site
 
-**[mahmoudramdane-personal.github.io/personal-website](https://mahmoudramdane-personal.github.io/personal-website/)**
+**[mahmoudramdane.com](https://mahmoudramdane.com)**
+*(DNS propagation may take up to 24h)*
 
 ---
 
