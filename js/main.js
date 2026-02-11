@@ -231,6 +231,7 @@ function Nav({ data }) {
 // HERO COMPONENT
 // ============================================
 function Hero({ data }) {
+    console.log('[Hero] data.profileImage:', data.profileImage); // DEBUG
     return html`
     <section class="hero">
       <div class="hero-bg"></div>

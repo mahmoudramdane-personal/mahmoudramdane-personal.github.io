@@ -340,6 +340,10 @@ export async function loadSiteData() {
             return null;
         }
 
+        // DEBUG — remove after verifying profile image works
+        console.log('[Contentful] settings.profileImage raw:', settings?.profileImage);
+        console.log('[Contentful] profileImage URL:', settings?.profileImage?.url);
+
         return {
             name: settings?.name || 'Mahmoud Ramdane',
             initials: settings?.initials || 'MR',
