@@ -350,6 +350,7 @@ export async function loadSiteData() {
             email: settings?.email || '',
             instagram: settings?.instagramUrl || 'https://www.instagram.com/mahmoud.ramdane',
             linkedin: settings?.linkedinUrl || 'https://www.linkedin.com/in/mahmoudramdane/',
+            profileImage: settings?.profileImage?.url || null,
 
             stats: stats
                 ? stats.map((s) => ({ label: s.label, value: s.value }))

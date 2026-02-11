@@ -236,7 +236,10 @@ function Hero({ data }) {
       <div class="hero-bg"></div>
       <div class="container">
         <div class="hero-content">
-          <div class="hero-avatar">${data.initials}</div>
+          ${data.profileImage
+            ? html`<div class="hero-avatar has-image"><img src="${data.profileImage}" alt="${data.name}" /></div>`
+            : html`<div class="hero-avatar">${data.initials}</div>`
+        }
           <p class="hero-eyebrow">${data.eyebrow}</p>
           <h1 class="hero-title">${data.title}</h1>
           <p class="hero-subtitle">${data.subtitle}</p>
